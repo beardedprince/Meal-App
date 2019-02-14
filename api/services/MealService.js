@@ -36,7 +36,7 @@ export default class MealsService {
       meal.size = data.size;
       meal.price = data.price;
       meal.currency = data.currency;
-      return meal;
+      retureal;
     });
   }
 
