@@ -1,20 +1,11 @@
 const express = require('express');
 const app = express();
 
-app.get('meals' , (res, req) => {
-    const meals = [
-        {
-            id : 1,
-            name: "rice",
-            size: "plates",
-            price: 500,
-            currency:"Naira"
-        }
-    ]
-
+app.get('/' , function (req, res) {
+     res.send('the api is working fine now')
 });
 
-const PORT = 8080;
+const PORT = 9001;
 app.listen(PORT, function(){
-    console.log('App is running on port'+ PORT);
+    console.log('App is running on port'+ " " + PORT);
 });
