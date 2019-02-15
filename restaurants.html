@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>	Make Order</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+	<!-- Header starts here -->
+	<header> 
+		<a class="brand" href="index.html">Meal Booking App</a>
+		<a href="login.html" class="post">Log in</a> 
+		<a href="#" class="post">Get access now </a>
+	</header>
+<!-- header stops here -->
+
+<!-- This holds all menu in a row, i inted to place four rows on a line -->
+
+
+<div class="menuHolder">
+
+		<div class="item">
+
+			<img src="assets/image/burger.jpg">
+			<h4>Price: <span class="money"> ₦6,500.00</span></h4>
+			<p>Name: 4 cheese Pasta</p>
+			
+			<div class="cart">
+				<button class="btn-cart">Add to cart</button>
+			</div>
+
+			<div class="cart">
+					<button class="btn-cart">View Details</button>
+				</div>
+		</div>
+
+		<div class="item">
+
+				<img src="assets/image/chili.jpg">
+				<h4>Price: <span class="money"> ₦6,500.00</span></h4>
+				<p>Name: Chilli burger</p>
+				
+				<div class="cart">
+					<button class="btn-cart">Add to cart</button>
+				</div>
+
+				<div class="cart">
+						<button class="btn-cart">View Details</button>
+					</div>
+		</div>
+
+		<div class="item">
+
+				<img src="assets/image/food.jpg">
+				<h4>Price: <span class="money"> ₦9,550.00</span></h4>
+				<p>Name: Fried Chicken Spring</p>
+				
+				<div class="cart">
+					<button class="btn-cart">Add to cart</button>
+				</div>
+
+				<div class="cart">
+						<button class="btn-cart">View Details</button>
+					</div>
+		</div>
+
+		<div class="item">
+
+				<img src="assets/image/chicken.jpg" >
+				<h4>Price: <span class="money"> ₦6,500.00</span></h4>
+				<p>Name: 4 cheese Pasta</p>
+				
+				<div class="cart">
+					<button class="btn-cart">Add to cart</button>
+				</div>
+
+				<div class="cart">
+						<button class="btn-cart">View Details</button>
+					</div>
+			</div>
+
+		
+ <!-- modal   -->
+ <button onclick="displaModal()">dld</button>
+ <div class="modal" id="modals">
+		<div class="modal-content">
+			<p>i am a modal</p>
+		</div>
+
+	</div>
+<!-- end of modal -->
+		
+
+	
+		
+	</div>
+		
+
+
+<!-- first menu row ends here -->
+<script>
+	function displaModal() {
+var modal = document.getElementById('modals').style.display = 'block'
+
+		
+	}
+</script>
+</body>
+</html>

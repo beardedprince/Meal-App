@@ -320,7 +320,7 @@ h4,p{
 .cart{
 	float: left;
 	background-color: white;
-	padding: 12px 9px;
+	padding: 12px 8px;
 	
 	margin-top: 10px;
 
@@ -394,3 +394,92 @@ footer{
 	
 }
 
+.howto{
+	float: left;
+	margin: 2%  6% auto
+}
+
+.howto p,h3{
+	text-align: center;
+}
+
+.container-new{
+	margin: 2% 5%;
+	padding: 5px;
+	background-color: rgb(147, 182, 190)
+}
+
+.menuList{
+	margin-top: 15px;
+	background: white
+}
+
+.menuList ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	border: 1px solid #ccc;
+    background-color: #f1f1f1;
+	
+}
+
+.menuList ul li {
+	float: left;
+}
+
+ .menuList ul li a {
+	display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menuList ul li a:active {
+	background-color: #E3FDF5
+}
+
+/* .menuList ul li a:hover{
+	
+	padding: 7px 16px;
+	border-bottom: 2px solid #f08b18;
+	transition-duration: 1s ;
+	font-family: 'Abel', sans-serif;
+}  */
+
+.list li{
+	display: inline
+}
+.order-action{
+	float: right;
+	
+	background: #e32619;
+	margin-left: 10%;
+}
+
+#menuContent{
+	display: none;
+}
+
+.food{
+	padding: 20px 0px;
+	border-bottom: 2px solid #888
+}
+
+.food h4{
+	padding-bottom: 6px;
+}
+
+
+
+.food img{
+	width: 90px;
+	height: 90px;
+	float: left;
+	padding-bottom: 30px
+}
+
+.modal{
+	display: none;
+}

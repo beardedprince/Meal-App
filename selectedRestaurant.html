@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <!-- font awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/regular.css" integrity="sha384-IG162Tfx2WTn//TRUi9ahZHsz47lNKzYOp0b6Vv8qltVlPkub2yj9TVwzNck6GEF" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/brands.css" integrity="sha384-BKw0P+CQz9xmby+uplDwp82Py8x1xtYPK3ORn/ZSoe6Dk3ETP59WCDnX+fI1XCKK" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/fontawesome.css" integrity="sha384-4aon80D8rXCGx9ayDt85LbyUHeMWd3UiBaWliBlJ53yzm9hqN21A+o1pqoyK04h+" crossorigin="anonymous">
+	<!-- End  -->
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- Header starts here -->
+	    <header> 
+            <a class="brand" href="index.html">Meal Booking App</a>
+            <a href="help.html" class="post">Help</a> 
+            <i class="fa fa-user post"></i>
+            <i class="fa fa-envelope post"></i>
+        </header>
+    <!-- header stops here -->
+
+    <!-- List of the selected restaurant is displayed -->
+        <div class="container-new">
+            <div class="vendorName">
+                <h4>KFC</h4> <span><i class="fa fa-map"></i> Location: V I</span>
+                <p><span> <i class="fa fa-rating"></i></span></p>
+            </div>
+
+            <div class="menuList">
+                <ul>
+                    <li><a href="#" class="tab">Trending Meals</a></li>
+                    <li><a href="#" class="tab" onclick="opentab(event,'breakfast')">Breakfast</a></li>
+                    <li><a href="#" class="tab" onclick="opentab('lunch')">Lunch</a></li>
+                    <li><a href="#" class="tab" onclick="opentab()">Supper</a></li>
+                    <li><a href="#" class="tab" onclick="opentab()">Snacks & Drinks</a></li>
+                   
+                </ul>
+
+                <div id="active" id="trending">
+                    <h4 class="menu-list"> Trending Meals</h4>
+                    
+                        <div class="food">
+                            <div>
+                                <img src="assets/image/fet.jpg" alt="">
+                            </div>
+                            <div>
+                                <h4>Salad Bolognese</h4>
+                                <p>Food Description goes here</p><span class="order-action">Order</span>
+                            </div>                         
+                                
+                        </div>
+                        <br>
+                        <div class="food">
+                                <div>
+                                    <img src="assets/image/fet.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Salad Bolognese</h4>
+                                    <p>Food Description goes here</p>
+                                    <span class="order-action">Order</span>
+                                </div>                         
+                                    
+                        </div>
+
+                        <br>
+                        <div class="food">
+                                <div>
+                                    <img src="assets/image/fet.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Salad Bolognese</h4>
+                                    <p>Food Description goes here</p>
+                                    <span class="order-action">Order</span>
+                                </div>                         
+                                    
+                        </div>
+        
+                </div>
+
+                <div id="menuContent" id="breakfast">
+                        <h4 class="menu-list"> Breakfast Meals</h4>
+                     <div class="food">
+                            <div>
+                                <img src="assets/image/fet.jpg" alt="">
+                            </div>
+                            <div>
+                                <h4>Salad Bolognese</h4>
+                                <p>Food Description goes here</p><span class="order-action">Order</span>
+                            </div>                         
+                                
+                        </div>
+                        <br>
+                        <div class="food">
+                                <div>
+                                    <img src="assets/image/fet.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Salad Bolognese</h4>
+                                    <p>Food Description goes here</p>
+                                    <span class="order-action">Order</span>
+                                </div>                         
+                                    
+                        </div>
+
+                        <br>
+                        <div class="food">
+                                <div>
+                                    <img src="assets/image/fet.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Salad Bolognese</h4>
+                                    <p>Food Description goes here</p>
+                                    <span class="order-action">Order</span>
+                                </div>                         
+                                    
+                        </div>   
+                                
+                                
+                            
+                </div>
+
+
+                <div id="menuContent" id="breakfast">
+                        <h4 class="menu-list"> Lunch Meals</h4>
+                        <div class="food">
+                                <div>
+                                    <img src="assets/image/fet.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Salad Bolognese</h4>
+                                    <p>Food Description goes here</p><span class="order-action">Order</span>
+                                </div>                         
+                                    
+                            </div>
+                            <br>
+                            <div class="food">
+                                    <div>
+                                        <img src="assets/image/fet.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Salad Bolognese</h4>
+                                        <p>Food Description goes here</p>
+                                        <span class="order-action">Order</span>
+                                    </div>                         
+                                        
+                            </div>
+    
+                            <br>
+                            <div class="food">
+                                    <div>
+                                        <img src="assets/image/fet.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Salad Bolognese</h4>
+                                        <p>Food Description goes here</p>
+                                        <span class="order-action">Order</span>
+                                    </div>                         
+                                        
+                            </div>   
+                                
+                                
+                            
+                </div>
+
+
+                <div id="menuContent" id="breakfast">
+                        <h4 class="menu-list"> Supper Meals</h4>
+                        <div class="food">
+                                <div>
+                                    <img src="assets/image/fet.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Salad Bolognese</h4>
+                                    <p>Food Description goes here</p><span class="order-action">Order</span>
+                                </div>                         
+                                    
+                            </div>
+                            <br>
+                            <div class="food">
+                                    <div>
+                                        <img src="assets/image/fet.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Salad Bolognese</h4>
+                                        <p>Food Description goes here</p>
+                                        <span class="order-action">Order</span>
+                                    </div>                         
+                                        
+                            </div>
+    
+                            <br>
+                            <div class="food">
+                                    <div>
+                                        <img src="assets/image/fet.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Salad Bolognese</h4>
+                                        <p>Food Description goes here</p>
+                                        <span class="order-action">Order</span>
+                                    </div>                         
+                                        
+                            </div>   
+                                
+                                
+                            
+                </div>
+
+
+                <div id="menuContent" id="breakfast">
+                        <h4 class="menu-list"> Snacks & Drinks </h4>
+                        <div class="food">
+                                <div>
+                                    <img src="assets/image/fet.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Salad Bolognese</h4>
+                                    <p>Food Description goes here</p><span class="order-action">Order</span>
+                                </div>                         
+                                    
+                            </div>
+                            <br>
+                            <div class="food">
+                                    <div>
+                                        <img src="assets/image/fet.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Salad Bolognese</h4>
+                                        <p>Food Description goes here</p>
+                                        <span class="order-action">Order</span>
+                                    </div>                         
+                                        
+                            </div>
+    
+                            <br>
+                            <div class="food">
+                                    <div>
+                                        <img src="assets/image/fet.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Salad Bolognese</h4>
+                                        <p>Food Description goes here</p>
+                                        <span class="order-action">Order</span>
+                                    </div>                         
+                                        
+                            </div>   
+                                
+                               
+                            
+                </div>
+            </div>
+
+        </div>
+    <!-- End of the list -->
+
+    <script>
+    function opentab() {
+           active = document.getElementsByClassName('menuContent');
+           var i;
+          for (i = 0; i < active.length; i++){
+              tab[i].className = tab[i].className.replace("active", "");
+         }
+         console.log(active)
+
+        document.getElementById('active').style.display = "none"
+
+        document.getElementById('menuContent').style.display = "block";
+   
+
+        
+        
+        
+    }
+    </script>
+</body>
+</html>
