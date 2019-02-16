@@ -2,6 +2,7 @@ import dummyData from '../utils/dummyData';
 import Meal from '../models/meal.model';
 
 const MealService = {
+
     fetchAllMeals() {
         const validMeals = dummyData.meals.map((meal) => {
             const newMeal = new Meal();
@@ -13,6 +14,7 @@ const MealService = {
         });
         return validMeals;
     },
+
     addMeal(meal) {
         const mealLength = dummyData.meals.length;
         const lastId = dummyData.meals[mealLength - 1].id;
@@ -21,9 +23,16 @@ const MealService = {
         dummyData.meals.push(meal);
         return meal;
     },
+
     getAMeal(id) {
         const meal = dummyData.meals.find(meal => meal.id == id);
         return meal || {};
+    },
+
+    delAMeal(id){
+      const meal = dummyData.meals.find(meal => meal.id == id);
+      dummyData.meals.pop(meal);
+      return meal;
     }
 };
 
