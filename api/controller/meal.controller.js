@@ -1,33 +1,38 @@
-import mealServices from '../services/MealService '
-const mealController = {
+import MealService from '../services/MealService';
 
-    fetchAllMeals(res, req) {
-        const allMeals = mealServices.fetchAllMeals();
+
+const MealController = {
+    fetchAllMeals(req, res) {
+        const allMeals = MealService.fetchAllMeals();
         return res.json({
             status: 'success',
             data: allMeals
         }).status(200);
     },
-
-    addMeals(res,req){
+    addAMeal(req, res) {
+        /*
+            Expect json of the format
+            {
+                name: "some food",
+                size: "LArge",
+                "price": 900
+            }
+        */
        const newMeal = req.body;
-       const createdMeal = mealServices.addMeals(newMeal);
+       const createdMeal = MealService.addMeal(newMeal);
        return res.json({
-        status: 'success',
-        data: addMeals
-    }).status(201);
+            status: 'success',
+            data: createdMeal
+        }).status(201);
     },
-
-    getSingleMeal(res,req){
-        const singleMeal = req.params.id;
-        const gottenMeal = mealServices.getSingleMeal(singleMeal);
+    getSingleMeal(req, res) {
+        const id = req.params.id;
+        const foundMeal = MealService.getAMeal(id);
         return res.json({
             status: 'success',
-            data: getSingleMeal
-        }).status(201);
-
+            data: foundMeal
+        }).status(200);
     }
+};
 
-}
-
-export default mealController;
+export default MealController
