@@ -48,7 +48,7 @@
             <div class="checkout-payment">
                     <div class="pick">
                         <label for="type"> Via Card</label> 
-                        <input type="radio" name="" id="" placeholder="Enter address" onclick="msg()"> <br>
+                        <input type="checkbox" name="" id="" placeholder="Enter address" onclick="msg()"> <br>
                         <span class="msg" id="msg"> Use your Visa, Mastercard or Verve card to proceed and complete your payment. Select this option then click on PLACE ORDER NOW and you will be redirected to the secure Pay payment page.</span>
 
                     </div>
@@ -86,7 +86,8 @@
 <script>
 var pick 
 function msg() {
-    document.getElementById('msg').style.display="block"
+    document.getElementById('msg').style.display="block";
+    pick(onkeypress).getElementById('msg').style.display = "none";
     
     
 }
