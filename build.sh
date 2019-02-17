@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cd back/
+cd api/
 npm install
 npm test
