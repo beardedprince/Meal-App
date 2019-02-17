@@ -674,3 +674,52 @@ box-shadow: 0px 2px 3px grey
 	border: 2px solid grey;
 	padding: 20px 20px;
 }
+
+.checkout-info{
+	background-color: #fff;
+	width: 65%;
+	margin: 3% auto;
+	border: 2px solid grey;
+	padding: 20px 20px;
+
+}
+	.checkout-payment{
+		background-color: #fff;
+		width: 65%;
+		margin: 3% auto;
+		border: 2px solid grey;
+		padding: 20px 20px;
+	}
+
+	.checkout-payment .pick{
+		background: white;
+		border: 2px solid grey;
+		padding: 20px 12px;
+		margin-bottom: 12px;
+	}
+
+	.checkout-summary{
+		background-color: #fff;
+		width: 65%;
+		margin: 3% auto;
+		border: 2px solid grey;
+		padding: 20px 20px;
+	}
+
+	.checkout-summary .sumary{
+		float: right;
+		margin-bottom: 15px;
+		margin-right: 20px;
+	}
+
+	.orderbtn{
+		background: #20ac76;
+		border:transparent;
+		color:white !important;
+	}
+
+	.msg{
+		display: none;
+		padding-top: 12px;
+		transition: .4s;
+	}
