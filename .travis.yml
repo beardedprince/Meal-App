@@ -1,26 +1,5 @@
 language: node_js
-
 node_js:
- - "node"
-env:
- global: CC_TEST_REPORTER_ID=553b2a432516282dcbf1cec624843364f4a2fc72401672bbe2b7d2d837d77907
+- "stable"
 
-
-before_script:
-   - cd api
-   - npm install
-  
-script:
- - npm test
- - npm run coverage
-cache:
- directories:
-   - node_modules
-after_success:
-   - coveralls
-   - npm run coverage
-   - cd
-   - codeclimate-test-reporter < coverage/lcov.info
-after_script:
- 
-   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+script: ./build.sh
