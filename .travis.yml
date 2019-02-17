@@ -11,14 +11,16 @@ before_script:
    - npm install
   
 script:
- - ./build.sh
  - npm test
  - npm run coverage
-=
+cache:
+ directories:
+   - node_modules
 after_success:
    - coveralls
    - npm run coverage
-      - codeclimate-test-reporter < coverage/lcov.info
+   - cd
+   - codeclimate-test-reporter < coverage/lcov.info
 after_script:
  
    - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
