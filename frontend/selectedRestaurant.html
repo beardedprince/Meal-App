@@ -25,19 +25,21 @@
     <!-- header stops here -->
 
     <!-- List of the selected restaurant is displayed -->
-        <div class="container-new">
-            <div class="vendorName">
+        <section class="imageHolder"></section>
+
+        <div class="vendorName">
                 <h4>KFC</h4> <span><i class="fa fa-map"></i> Location: V I</span>
                 <p><span> <i class="fa fa-rating"></i></span></p>
             </div>
 
+        <div class="container-new">
             <div class="menuList">
                 <ul>
                     <li><a href="#" class="tab">Trending Meals</a></li>
-                    <li><a href="#" class="tab" onclick="opentab(event,'breakfast')">Breakfast</a></li>
-                    <li><a href="#" class="tab" onclick="opentab(event,'breakfast')">Lunch</a></li>
-                    <li><a href="#" class="tab" onclick="opentab(event, 'breakfast')">Supper</a></li>
-                    <li><a href="#" class="tab" onclick="opentab(event,'breakfast')">Snacks & Drinks</a></li>
+                    <li><a href="#breakfast" class="tab">Breakfast</a></li>
+                    <li><a href="#lunch" class="tab">Lunch</a></li>
+                    <li><a href="#supper" class="tab">Supper</a></li>
+                    <li><a href="#others" class="tab">Snacks & Drinks</a></li>
                    
                 </ul>
 
@@ -83,58 +85,15 @@
         
                 </div>
 
-                <div id="menuContent" id="breakfast">
-                        <h4 class="menu-list"> Breakfast Meals</h4>
-                     <div class="food">
-                            <div>
-                                <img src="assets/image/fet.jpg" alt="">
-                            </div>
-                            <div>
-                                <h4>Ebiripo ati Obe</h4>
-                                <p>Food Description goes here</p>
-                                <button class="order-action" id="btn">Order</button>
-                            </div>                         
-                                
-                        </div>
-                        <br>
-                        <div class="food">
+            <section id="breakfast">
+                    <div id="menuContent" id="breakfast">
+                            <h4 class="menu-list"> Breakfast Meals</h4>
+                         <div class="food">
                                 <div>
                                     <img src="assets/image/fet.jpg" alt="">
                                 </div>
                                 <div>
-                                    <h4>Salad Bolognese</h4>
-                                    <p>Food Description goes here</p>
-                                    <button class="order-action" id="btn">Order</button>
-                                </div>                         
-                                    
-                        </div>
-
-                        <br>
-                        <div class="food">
-                                <div>
-                                    <img src="assets/image/fet.jpg" alt="">
-                                </div>
-                                <div>
-                                    <h4>Salad Bolognese</h4>
-                                    <p>Food Description goes here</p>
-                                    <button class="order-action" id="btn">Order</button>
-                                </div>                         
-                                    
-                        </div>   
-                                
-                                
-                            
-                </div>
-
-
-                <div id="menuContent" id="breakfast">
-                        <h4 class="menu-list"> Lunch Meals</h4>
-                        <div class="food">
-                                <div>
-                                    <img src="assets/image/fet.jpg" alt="">
-                                </div>
-                                <div>
-                                    <h4>Salad Bolognese</h4>
+                                    <h4>Ebiripo ati Obe</h4>
                                     <p>Food Description goes here</p>
                                     <button class="order-action" id="btn">Order</button>
                                 </div>                         
@@ -165,70 +124,16 @@
                                     </div>                         
                                         
                             </div>   
-                                
-                                
-                            
-                </div>
-
-
-                <div id="menuContent" id="breakfast">
-                        <h4 class="menu-list"> Supper Meals</h4>
-                        <div class="food">
-                                <div>
-                                    <img src="assets/image/fet.jpg" alt="">
-                                </div>
-                                <div>
-                                    <h4>Salad Bolognese</h4>
-                                    <p>Food Description goes here</p>
-                                    <button class="order-action" id="btn">Order</button>
-                                </div>                         
                                     
-                            </div>
-                            <br>
-                            <div class="food">
-                                    <div>
-                                        <img src="assets/image/fet.jpg" alt="">
-                                    </div>
-                                    <div>
-                                        <h4>Salad Bolognese</h4>
-                                        <p>Food Description goes here</p>
-                                        <button class="order-action" id="btn">Order</button>
-                                    </div>                         
-                                        
-                            </div>
-    
-                            <br>
-                            <div class="food">
-                                    <div>
-                                        <img src="assets/image/fet.jpg" alt="">
-                                    </div>
-                                    <div>
-                                        <h4>Salad Bolognese</h4>
-                                        <p>Food Description goes here</p>
-                                        <button class="order-action" id="btn">Order</button>
-                                    </div>                         
-                                        
-                            </div>   
-                                
-                                
-                            
-                </div>
-
-
-                <div id="menuContent" id="breakfast">
-                        <h4 class="menu-list"> Snacks & Drinks </h4>
-                        <div class="food">
-                                <div>
-                                    <img src="assets/image/fet.jpg" alt="">
-                                </div>
-                                <div>
-                                    <h4>Salad Bolognese</h4>
-                                    <p>Food Description goes here</p>
-                                    <button class="order-action" id="btn">Order</button>
-                                </div>                         
                                     
-                            </div>
-                            <br>
+                                
+                    </div>
+            </section>
+
+
+            <section id="lunch">
+                    <div id="menuContent" id="Lunch">
+                            <h4 class="menu-list"> Lunch Meals</h4>
                             <div class="food">
                                     <div>
                                         <img src="assets/image/fet.jpg" alt="">
@@ -239,24 +144,129 @@
                                         <button class="order-action" id="btn">Order</button>
                                     </div>                         
                                         
-                            </div>
-    
-                            <br>
+                                </div>
+                                <br>
+                                <div class="food">
+                                        <div>
+                                            <img src="assets/image/fet.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Salad Bolognese</h4>
+                                            <p>Food Description goes here</p>
+                                            <button class="order-action" id="btn">Order</button>
+                                        </div>                         
+                                            
+                                </div>
+        
+                                <br>
+                                <div class="food">
+                                        <div>
+                                            <img src="assets/image/fet.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Salad Bolognese</h4>
+                                            <p>Food Description goes here</p>
+                                            <button class="order-action" id="btn">Order</button>
+                                        </div>                         
+                                            
+                                </div>   
+                                    
+                                    
+                                
+                    </div>
+            </section>
+
+
+            <section id="supper">
+                    <div id="menuContent" id="supper">
+                            <h4 class="menu-list"> Supper Meals</h4>
                             <div class="food">
                                     <div>
                                         <img src="assets/image/fet.jpg" alt="">
                                     </div>
                                     <div>
                                         <h4>Salad Bolognese</h4>
-                                        <p><p>Food Description goes here</p>
+                                        <p>Food Description goes here</p>
                                         <button class="order-action" id="btn">Order</button>
                                     </div>                         
                                         
-                            </div>   
+                                </div>
+                                <br>
+                                <div class="food">
+                                        <div>
+                                            <img src="assets/image/fet.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Salad Bolognese</h4>
+                                            <p>Food Description goes here</p>
+                                            <button class="order-action" id="btn">Order</button>
+                                        </div>                         
+                                            
+                                </div>
+        
+                                <br>
+                                <div class="food">
+                                        <div>
+                                            <img src="assets/image/fet.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Salad Bolognese</h4>
+                                            <p>Food Description goes here</p>
+                                            <button class="order-action" id="btn">Order</button>
+                                        </div>                         
+                                            
+                                </div>   
+                                    
+                                    
                                 
-                               
-                            
-                </div>
+                    </div>
+            </section>
+
+
+            <section id="others">
+                    <div id="menuContent" id="breakfast">
+                            <h4 class="menu-list"> Snacks & Drinks </h4>
+                            <div class="food">
+                                    <div>
+                                        <img src="assets/image/fet.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Salad Bolognese</h4>
+                                        <p>Food Description goes here</p>
+                                        <button class="order-action" id="btn">Order</button>
+                                    </div>                         
+                                        
+                                </div>
+                                <br>
+                                <div class="food">
+                                        <div>
+                                            <img src="assets/image/fet.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Salad Bolognese</h4>
+                                            <p>Food Description goes here</p>
+                                            <button class="order-action" id="btn">Order</button>
+                                        </div>                         
+                                            
+                                </div>
+        
+                                <br>
+                                <div class="food">
+                                        <div>
+                                            <img src="assets/image/fet.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <h4>Salad Bolognese</h4>
+                                            <p><p>Food Description goes here</p>
+                                            <button class="order-action" id="btn">Order</button>
+                                        </div>                         
+                                            
+                                </div>   
+                                    
+                                   
+                                
+                    </div>
+            </section>
             </div>
 
 

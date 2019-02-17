@@ -8,7 +8,7 @@
 
 
 body{
-	background-image: linear-gradient(-225deg, #E3FDF5 6%, #FFE6FA 100%);
+	background-image: linear-gradient(-225deg, #E3FDF5 6%, rgb(206, 206, 206) 100%);
 }
 
 header{
@@ -151,6 +151,18 @@ input[type=password]{
     margin-bottom: 4%;
 }
 
+input[type=phone]{
+	width: 80%;
+	padding: 12px 20px;
+	outline: none;
+	border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+    font-size: 15px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    margin-bottom: 4%;
+}
+
 
 input[type=submit]{
 	width: 50%;
@@ -272,8 +284,7 @@ hr{
 .otherBtn a{
 	color: white;
 	font-size: 20px;
-	
-
+	transition: 0.9s;
 }
 
 #menu{
@@ -311,6 +322,12 @@ border-radius: 5px;
 .item img{
 	width:100%;
 	height: 220px;
+}
+
+.item img:hover{
+	width:100%;
+	height: 230px;
+	transition: 0.1s;
 }
 
 h4,p{
@@ -396,20 +413,30 @@ footer{
 
 .howto{
 	float: left;
-	margin: 2%  6% auto
+	width: 30%;
+	margin-left: 3%
+}
+
+.howto img{
+	float: left;
+	width: 100%;
+	margin-bottom: 12px;
+	
 }
 
 .howto p,h3{
 	text-align: center;
+	
 }
 
 .container-new{
-	margin: 2% 5%;
+	margin: 1% 1%;
 	padding: 5px;
-	background-color: rgb(147, 182, 190)
+	background-color: rgb(147, 182, 190);
 }
 
 .menuList{
+
 	margin-top: 15px;
 	background: white
 }
@@ -420,7 +447,9 @@ footer{
 	margin: 0;
 	overflow: hidden;
 	border: 1px solid #ccc;
-    background-color: #f1f1f1;
+	background-color: white;
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
 	
 }
 
@@ -458,9 +487,7 @@ footer{
 	margin-left: 10%;
 }
 
-#menuContent, #tab2, #tab3, #tab4, #tab5{
-	display: none;
-}
+
 
 .food{
 	padding: 20px 0px;
@@ -535,4 +562,107 @@ footer{
 	background-color: #39434c;
 	padding: 12px 20px;
 	
+}
+
+.imageHolder{
+	background: linear-gradient(rgba(240, 61, 86, 0.4),rgba(67, 100, 13, 0.4)),url(../assets/image/image5.jpg);
+	width: 100%;
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+.vendorName{
+	background: white;
+	margin-bottom: 2%;
+}
+
+.vendorName h4{
+	padding-top: 15px;
+	margin-left: 5%;
+}
+
+.billing{
+	box-sizing: border-box;
+	float: left;
+	width: 65%;
+	margin: 1% 3% auto;
+
+}
+
+
+.payment{
+	float: right;
+	width: 20%
+}
+
+/* Css for all restuarants  ////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.search{
+	width: 65%;
+	display: inline-block;
+	margin: 5% auto;
+	background: transparent;
+	height: 90px;
+	margin-left: 17%;
+	margin-right: 17%
+}
+
+.search #place,  #select{
+	width: 35%;
+	float: left;
+	
+}
+
+#go{
+	width: 12%;
+	transition: none;
+	border: none;
+}
+
+#place, #go, #select{
+	margin:3%;
+	transition: none;
+	
+}
+
+.container-full{
+	width: 95%;
+	margin: 1% auto;
+	background: linear-gradient(rgba(240, 61, 86, 0.4),rgba(67, 100, 13, 0.4)),url(../assets/image/slider.jpg);
+	
+}
+
+
+.row{
+	width: 100%;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	background-color: red
+	
+}
+
+.row .lists{
+width:23%;
+
+float: left;
+margin-left: 12px;
+margin-right: 12px;
+margin-bottom: 2%;
+background: white;
+border-radius: 0px 0px 5px 5px;
+box-shadow: 0px 2px 3px grey
+}
+
+.lists img{
+	width: 100%;
+	height: 250px;
+	
+}
+
+#restName{
+	font-size: 15px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: black;
 }

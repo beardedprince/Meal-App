@@ -18,7 +18,8 @@ script:
 after_success:
    - coveralls
    - npm run coverage
-   - npm install codeclimate-test-reporter
+   - cd
    - codeclimate-test-reporter < coverage/lcov.info
 after_script:
- - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+   - ./node_modules/.bin/mocha YOUR_TESTS/**.js -R mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
+   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

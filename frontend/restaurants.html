@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>	Make Order</title>
+	<title>Restaurant List</title>
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
@@ -16,95 +16,102 @@
 <!-- header stops here -->
 
 <!-- This holds all menu in a row, i inted to place four rows on a line -->
+<div class="container-full">	
+	<!-- search tab -->
+	<div class="search">
+		<input type="text" id="place" placeholder="Search restaurant by name">
+		<select name="" id="select" placeholder="Select Location">
+			<option value="">Select location</option>
+		</select>
+		<input type="submit" id="go">
+	</div>
+	<!-- end of search tab -->
 
-
-<div class="menuHolder">
-
-		<div class="item">
-
-			<img src="assets/image/burger.jpg">
-			<h4>Price: <span class="money"> ₦6,500.00</span></h4>
-			<p>Name: 4 cheese Pasta</p>
-			
-			<div class="cart">
-				<button class="btn-cart">Add to cart</button>
+	<div class="listholders">
+		<div class="row">
+			<div class="lists">
+				<img src="assets/image/image5.jpg" alt="">
+				<strong><p id="restName">Anikytees Menu</p></strong>
+				<span> <i class="fa fa-star"></i></span>
+				<span> <i class="fa fa-star"></i>.</span>
+				<span><i class="fa fa-map"></i>Nigerian</span>
 			</div>
 
-			<div class="cart">
-					<button class="btn-cart">View Details</button>
-				</div>
-		</div>
+			<div class="lists">
+					<img src="assets/image/food 4.jpg" alt="">
+					<strong><p id="restName">Kentucky Chicken</p></strong>
+					<span> <i class="fa fa-star"></i></span>
+					<span> <i class="fa fa-star"></i>.</span>
+					<span><i class="fa fa-map"></i>Nigerian</span>
+			</div>
 
-		<div class="item">
+			<div class="lists">
+					<img src="assets/image/food2.png" alt="">
+				 	<strong><p id="restName">Candellion Pot</p></strong>	
+					<span> <i class="fa fa-star"></i></span>
+					<span> <i class="fa fa-star"></i>.</span>
+					<span><i class="fa fa-map"></i>Nigerian</span>
+			</div>
 
-				<img src="assets/image/chili.jpg">
-				<h4>Price: <span class="money"> ₦6,500.00</span></h4>
-				<p>Name: Chilli burger</p>
-				
-				<div class="cart">
-					<button class="btn-cart">Add to cart</button>
-				</div>
-
-				<div class="cart">
-						<button class="btn-cart">View Details</button>
-					</div>
-		</div>
-
-		<div class="item">
-
-				<img src="assets/image/food.jpg">
-				<h4>Price: <span class="money"> ₦9,550.00</span></h4>
-				<p>Name: Fried Chicken Spring</p>
-				
-				<div class="cart">
-					<button class="btn-cart">Add to cart</button>
-				</div>
-
-				<div class="cart">
-						<button class="btn-cart">View Details</button>
-					</div>
-		</div>
-
-		<div class="item">
-
-				<img src="assets/image/chicken.jpg" >
-				<h4>Price: <span class="money"> ₦6,500.00</span></h4>
-				<p>Name: 4 cheese Pasta</p>
-				
-				<div class="cart">
-					<button class="btn-cart">Add to cart</button>
-				</div>
-
-				<div class="cart">
-						<button class="btn-cart">View Details</button>
+			<div class="lists">
+					<img src="assets/image/food2.png" alt="">
+					<div style="background:white">
+							<strong><p id="restName">Menu 24/7</p></strong>
+							<span> <i class="fa fa-star"></i></span>
+							<span> <i class="fa fa-star"></i>.</span>
+							<span><i class="fa fa-map"></i>Nigerian</span>
 					</div>
 			</div>
 
-		
- <!-- modal   -->
- <button onclick="displaModal()">dld</button>
- <div class="modal" id="modals">
-		<div class="modal-content">
-			<p>i am a modal</p>
 		</div>
+		<div class="row">
+				<div class="lists">
+						<img src="assets/image/food2.png" alt="">
+						<div style="background:white">
+								<strong><p id="restName">Menu 24/7</p></strong>
+								<span> <i class="fa fa-star"></i></span>
+								<span> <i class="fa fa-star"></i>.</span>
+								<span><i class="fa fa-map"></i>Nigerian</span>
+						</div>
+				</div>
 
-	</div>
-<!-- end of modal -->
-		
+				<div class="lists">
+						<img src="assets/image/food2.png" alt="">
+						<div style="background:white">
+								<strong><p id="restName">Menu 24/7</p></strong>
+								<span> <i class="fa fa-star"></i></span>
+								<span> <i class="fa fa-star"></i>.</span>
+								<span><i class="fa fa-map"></i>Nigerian</span>
+						</div>
+				</div>
 
-	
-		
+			<div class="lists">
+						<img src="assets/image/food2.png" alt="">
+						<div style="background:white">
+								<strong><p id="restName">Menu 24/7</p></strong>
+								<span> <i class="fa fa-star"></i></span>
+								<span> <i class="fa fa-star"></i>.</span>
+								<span><i class="fa fa-map"></i>Nigerian</span>
+						</div>
+				</div>
+
+				<div class="lists">
+						<img src="assets/image/food2.png" alt="">
+						<div style="background:white">
+								<strong><p id="restName">Menu 24/7</p></strong>
+								<span> <i class="fa fa-star"></i></span>
+								<span> <i class="fa fa-star"></i>.</span>
+								<span><i class="fa fa-map"></i>Nigerian</span>
+						</div>
+				</div>
+
+		</div>
 	</div>
+</div>
 		
 
 
 <!-- first menu row ends here -->
-<script>
-	function displaModal() {
-var modal = document.getElementById('modals').style.display = 'block'
 
-		
-	}
-</script>
 </body>
 </html>
