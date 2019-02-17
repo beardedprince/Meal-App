@@ -1,5 +1,6 @@
 const expect = require('chai').expect;
 const request = require('request');
+import nyc from 'nyc';
 
 it('Main page content', function(done) {
     request('http://localhost:9001' , function(error, response, body) {

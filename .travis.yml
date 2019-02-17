@@ -15,6 +15,9 @@ before_script:
 script:
  - npm test
  - npm run coverage
+cache:
+ directories:
+   - node_modules
 after_success:
    - coveralls
    - npm run coverage
