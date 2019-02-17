@@ -345,6 +345,13 @@ h4,p{
 }
 
 
+.cart a{
+	padding: 0;
+
+
+}
+
+
 .btn-cart{
 	padding: 12px 30px;
 	background-color: rgb(169, 181, 185);
