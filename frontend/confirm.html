@@ -18,7 +18,34 @@
     <!-- header stops here -->
 
 
+    <script>
+        function validate() {
+        var fname = window.ollie.fname.value;
+        var pass = window.ollie.pass.value;
+        var pass2 = window.ollie.pass2.value;
     
+        if (fname == "" || fname == null) {
+            console.log('name cannot be blank');
+            document.getElementById('fakename').innerHTML="<img src='unchecked.gif'> Please enter your name";
+            return false;
+        } else if (name.length > 6){
+            console.log("Password must be at least 6 characters long."); 
+            document.getElementById('fakepass').innerHTML="Password must be at least 6 characters long.";
+            return false;
+        } else if (pass.length < 6){
+            console.log("Password must be at least 6 characters long."); 
+            document.getElementById('fakepass').innerHTML="Password must be at least 6 characters long.";
+            return false;
+        }
+        else if (pass !== pass2){
+            console.log("password does not match."); 
+            document.getElementById('fakepass2').innerHTML="invalid password, check again.";
+            return false;
+        }
+    }
+    
+    
+        </script>
     
 </body>
 </html>

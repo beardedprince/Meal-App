@@ -426,8 +426,10 @@ footer{
 
 .howto img{
 	float: left;
-	width: 100%;
+	clear: both;
+	width: 50%;
 	margin-bottom: 12px;
+	margin-left: 15%;
 	
 }
 
