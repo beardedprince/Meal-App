@@ -316,7 +316,7 @@ margin-right: 15px;
 margin-left: 25px;
 background-color: white;
 border-radius: 5px;
-
+margin-bottom: 3%;
 }
 
 .item img{
@@ -437,6 +437,26 @@ footer{
 	text-align: center;
 	
 }
+
+.allrest{
+	margin-left:45% ;
+	margin-top: 5% !important;
+}
+
+.allrest button{
+	border-radius: 12px;
+	padding: 12px;
+	color: black !important;
+	background: white
+}
+
+.allrest button a{
+	
+	color: black !important;
+	font-size: 17px;
+}
+
+
 
 .container-new{
 	margin: 1% 1%;
@@ -641,6 +661,10 @@ footer{
 	
 }
 
+#select{
+	padding: 12px 20px;
+}
+
 .container-full{
 	width: 95%;
 	margin: 1% auto;
@@ -673,6 +697,10 @@ box-shadow: 0px 2px 3px grey
 	width: 100%;
 	height: 250px;
 	
+}
+
+.list a img{
+	padding: 0;
 }
 
 #restName{
