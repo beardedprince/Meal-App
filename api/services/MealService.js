@@ -33,6 +33,24 @@ const MealService = {
       const meal = dummyData.meals.find(meal => meal.id == id);
       dummyData.meals.pop(meal);
       return meal;
+    },
+
+    updateMeal(meal, id){
+
+        // get the meal id and index
+        const mealId = dummy.meals.find((Ameal) => Ameal.id == id);
+        const getMealIndex = dummy.meals.indexOf(mealId);
+
+        const updateAMeal = new Meal();
+        
+        updateAMeal.id = id;
+        updateAMeal.name = meal.name;
+        updateAMeal.size = meal.size;
+        updateAMeal.price = meal.price;
+
+        dummy.meals.splice(getMealIndex, 1, updateAMeal);
+
+        return updateAMeal;
     }
 };
 
