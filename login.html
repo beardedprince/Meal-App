@@ -24,7 +24,7 @@
 
 <!-- Container to hold form starts here -->
 <div class="container">
- 	<form>	
+ 	<form method="POST" name="myform" action="dashboard.html" >	
 
  		<h2 class="description">Log in</h2>
 
@@ -32,14 +32,14 @@
 	 			<span class="fontHolder">	
 	 				<i class="fa fa-user-circle"></i>
 	 			</span>
-	 				<input type="text" name="" placeholder="username">
+	 				<input type="text" name="admin" placeholder="username">
 
 	 			<br>	
 
 	 			<span class="fontHolder">	
 	 				<i class="fa fa-key"></i>
 	 			</span>
-	 				<input type="password" name="" placeholder="password">
+	 				<input type="password" name="adminpass" placeholder="password">
 	 			<span>	
 	 				<i class="fa fa-eye"></i>
 	 			</span>
@@ -56,5 +56,28 @@
 </div>
 <!-- container ends here -->
 
+<!-- <script>
+     validate () => {
+    var fname = window.myform.user.value;
+    var pass = window.myform.adminpass.value;
+    
+
+    if (user == "" || user == null) {
+        console.log('name cannot be blank');
+        document.getElementById('fakename').innerHTML="<img src='unchecked.gif'> Please enter your name";
+        return false;
+    } 
+     else if (adminpass == "" || adminpass == null){
+        console.log("Password must be at least 6 characters long."); 
+        document.getElementById('fakepass').innerHTML="Password must be at least 6 characters long.";
+        return false;
+    }
+    
+    
+} -->
+
+
+    </script>
 </body>
+
 </html>
