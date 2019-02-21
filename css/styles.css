@@ -512,9 +512,11 @@ footer{
 .order-action{
 	float: right;
 	
-	background: #31083d;
+	background:grey;
 	margin-left: 10%;
 	border:none;
+	text-align: center;
+	padding: 12px;
 }
 
 
