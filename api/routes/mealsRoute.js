@@ -7,7 +7,7 @@ router.get('/', MealController.fetchAllMeals);
 router.post('/', MealController.addAMeal);
 router.get('/:id', MealController.getSingleMeal);
 router.delete('/:id', MealController.deleteSingleMeal);
-router.put('/:id', MealsController.updateMeal);
+router.put('/:id', MealController.updateMeal);
 
 // other routes to be added
 

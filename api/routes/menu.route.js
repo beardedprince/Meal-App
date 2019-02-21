@@ -1,5 +1,7 @@
 import { Router } from 'express';
 import MenuController from '../controller/menu.controller';
-const menusRouter = Router();
-menusRouter.get('/', MenuController.fetchAllMenus);
-menusRouter.post('/', MenuController.setupMenu);
+const router = Router();
+router.get('/', MenuController.fetchAllMenus);
+router.post('/', MenuController.setupMenu);
+
+module.exports = router ;
