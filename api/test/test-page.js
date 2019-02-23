@@ -26,5 +26,9 @@ describe('Meal', () => {
         });
     });
   });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 01dab9c5a8548a8d673f82dcdeac7307f4dbe3ff
 
 });
