@@ -11,7 +11,7 @@ describe('Meal', () => {
     done();
   });
 
-/**
+  /**
    * Test the GET /meals/ route
    */
   describe('GET /meals', () => {
