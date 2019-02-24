@@ -11,4 +11,8 @@ cache:
   directories:
     - "api/node_modules"  
 script:
+
   - npm test
+after_success:
+  - npm run coverage
+
