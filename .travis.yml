@@ -1,11 +1,15 @@
 language: node_js
 node_js:
   - "stable"
+env:
+ global: CC_TEST_REPORTER_ID=553b2a432516282dcbf1cec624843364f4a2fc72401672bbe2b7d2d837d77907
 before_install: 
-  - cd ./api
+  - cd api/
   - npm install
 cache:
   directories:
     - "api/node_modules"  
 script:
-  - npm run test:travis
+  - npm test
+after_success:
+  - npm run coverage

@@ -1,4 +1,4 @@
-import dummyData from '../utils/dummyData';
+import dummyData from '../utils/dummydata';
 import Meal from '../models/meal.model';
 
 const MealService = {
