@@ -3,6 +3,8 @@ import bodyParser from 'body-parser';
 
 import mealsRoutes from './routes/mealsRoute';
 import menusRouter from './routes/menu.route';
+import OrderRouter from './routes/order.routes';
+
 const app = express();
 
 app.use(bodyParser.json());
@@ -13,6 +15,7 @@ app.get('/' ,  (req, res) =>
 
  app.use('/api/v1/meals', mealsRoutes);
 app.use('/api/v1/menus', menusRouter);
+app.use('/api/v1/orders', OrderRouter);
 
 
 const PORT = 9001;
