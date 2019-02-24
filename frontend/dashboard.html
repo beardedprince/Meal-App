@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>	Admin dashboard</title>
+	<title>	User dashboard</title>
 	<link rel="stylesheet" href="css/admin.css">
 	<!-- font awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
@@ -15,62 +15,78 @@
 	<!-- Header starts here -->
 	<header> 
 			<a class="brand" href="index.html">Meal Booking App</a>
+			<a href="" class="post">Admin</a> 
+            <i class="fa fa-user post"></i>
 			
 		</header>
 	<!-- header stops here -->
 	
-	<ul>
-			<li>Profile</li>
-			<li>Menu</li>
-			<li>View Orders</li>
-			<li>View Summary</li>
-			<li>Logout</li>
-		</ul>
-		
-	<div class="dashboard">
-	
-
-		<div class="menuActions">
-			<div class="actions">
-				<span>
-					<i class="fa fa-plus"></i>
-				</span>
-					<h4 class="action-text">Add  Menu</h4>
-			</div>
-	
-			<div class="actions">
-					<span>
-						<i class="fa fa-minus"></i>
-					</span>
-					<h4 class="action-text">Delete  Menu</h>
-			</div>
-	
-			<div class="actions">
-					<span>
-						<i class="fa fa-pen"></i>
-					</span>
-					<h4 class="action-text">Modify  Menu</h4>
-			</div>
+	<div class="dashboard-holder">
+		<div class="option" >
+			<ul>
+				<li><a href="#">Profile</a></li>
+				<li><a href="">Todays Menu</a></li>
+				<li><a href="history.html"> Order History</a></li>
+				<li><a href="index.html">Log Out</a></li>
+			</ul>
 		</div>
-
-		<div class="menuHolder">
-
-			<div class="panel">
-				<div class="panel-head">
-					heading goes here
-				</div>
-				<div class="panel-content">
-					ddhhdhdhd
-				</div>
+			
+		<div class="dashboard">
+				<h3>Business Biodata</h3>
+			<div class="profile-pics">
+				<img src="assets/image/order food.png" alt="">
 			</div>
-		</div>
-<br>
-		
+			<div class="profile-info">
+					<div>
+							<label for="location"> Business ID</label> <br>
+							<input type="number" name="" id="" placeholder="002" readonly>
+						</div>
+						<div>
+							<label for="location">Full Name </label> <br>
+							<input type="email" name="" id="" placeholder="Enter full name">
+						</div>
+						<div>
+							<label for="location"> Phone</label> <br>
+							<input type="phone" name="" id="" placeholder="Enter phone number">
+						</div>
+			</div>
+			<div class="profile-info">
+				
+					<div>
+							<label for="location">  Business Name</label> <br>
+							<input type="text" name="" id="" placeholder="Enter business name">
+						</div>
+						<div>
+							<label for="location"> Email</label> <br>
+							<input type="email" name="" id="" placeholder="Enter email address">
+						</div>
+						<div>
+							<label for="location"> Phone 2</label> <br>
+							<input type="phone" name="" id="" placeholder="Enter another phone number">
+						</div>
+			</div>
+			<hr style="clear:both; border:1px solid grey; border-style: dashed">
+			<div class="profile-cont">
+					
+						<div class="profile-cont-inner" >
+								<label for="location"> Business Address </label> <br>
+								<textarea name="" id="" cols="110" rows="3"></textarea>
+						</div>
 
-	</div>
+						<div >
+									<label for="location"> Business Account </label> <br>
+									<input type="number">
+						</div>
+							
+				</div>
+			
+
+			<button class="save">Save profile</button>
+
+		</div>
+			
 	<script>
-	const pickModal = document.getElementById('myModal');
-	const show = pickModal.style.display = 'block';
+	
 	</script>
 </body>
 </html>
