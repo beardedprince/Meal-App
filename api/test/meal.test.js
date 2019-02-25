@@ -3,7 +3,7 @@ import chai from 'chai';
 import chaiHttp from 'chai-http';
 import index from '../index';
 const should = chai.should();
-import dummyData from '../utils/dummyData';
+import dummyData from '../utils/dummydata';
 
 
 chai.use(chaiHttp);
