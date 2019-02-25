@@ -39,7 +39,9 @@ const MealService = {
     updateMeal(meal, id){
 
         // get the meal id and index
+
         const mealId = dummydata.meals.find((Ameal) => Ameal.id == id);
+
         const getMealIndex = dummydata.meals.indexOf(mealId);
 
         const updateAMeal = new Meal();
@@ -49,7 +51,8 @@ const MealService = {
         updateAMeal.size = meal.size;
         updateAMeal.price = meal.price;
 
-        dummydata.meals.splice(getMealIndex, 1, updateAMeal);
+        dummyData.meals.splice(getMealIndex, 1, updateAMeal);
+
 
         return updateAMeal;
     }
