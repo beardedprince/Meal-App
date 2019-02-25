@@ -36,7 +36,7 @@ const MealController = {
   updateMeal(req, res) {
     const mealBody = req.body;
     const mealId = req.params.id;
-    const editMeal = MealServices.updateMeal(mealBody, mealId);
+    const editMeal = MealService.updateMeal(mealBody, mealId);
     return res.json({
       status: 'Success',
       data: editMeal,
