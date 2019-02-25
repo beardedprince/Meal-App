@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 
 import mealsRoutes from './routes/mealsRoute';
 import menusRouter from './routes/menu.route';
-import OrderRouter from './routes/order.routes';
+import OrderRouter from './routes/order.route';
 //app 
 const app = express();
 

@@ -1,6 +1,7 @@
 import dummyData from '../utils/dummydata';
 import Meal from '../models/meal.model';
 
+
 const MealService = {
 
     fetchAllMeals() {
@@ -38,8 +39,8 @@ const MealService = {
     updateMeal(meal, id){
 
         // get the meal id and index
-        const mealId = dummy.meals.find((Ameal) => Ameal.id == id);
-        const getMealIndex = dummy.meals.indexOf(mealId);
+        const mealId = dummydata.meals.find((Ameal) => Ameal.id == id);
+        const getMealIndex = dummydata.meals.indexOf(mealId);
 
         const updateAMeal = new Meal();
         
@@ -48,7 +49,7 @@ const MealService = {
         updateAMeal.size = meal.size;
         updateAMeal.price = meal.price;
 
-        dummy.meals.splice(getMealIndex, 1, updateAMeal);
+        dummydata.meals.splice(getMealIndex, 1, updateAMeal);
 
         return updateAMeal;
     }
