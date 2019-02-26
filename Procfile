@@ -1,1 +1,1 @@
-web: npm start --prefix api/
+web: babel-node api/index.js
